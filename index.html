@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fp.css">
+    <title>Options</title>
+</head>
+<body>
+    <ul>
+        <li><button class="gbutton" onclick="redirectToLove()">Valentines Day</button></li>
+        <li><button class="pbutton" onclick="redirectToPictures()">Pictures</button></li>
+        <!-- <li><button class="lbutton" onclick="redirectToLetters()">Letters</button></li> -->
+        <li><button class="hbutton" onclick="redirectToBirthday()">Birthday</button></li>
+        <!-- <li><button class="outbtn" onclick="redirectToLogin()">Logout</button></li> -->
+    </ul>
+
+ 
+<script>
+    function redirectToLove() {
+        // Redirect to the love page
+        window.location.href = 'greeting.html';
+    }
+
+    function redirectToPictures() {
+        // Redirect to the pictures page or update with the desired destination
+        window.location.href = 'pictures.html';
+    }
+
+    function redirectToLetters() {
+        // Redirect to the pictures page or update with the desired destination
+        window.location.href = 'letters.html';
+    }
+
+    function redirectToLogin() {
+        // Redirect to the pictures page or update with the desired destination
+        window.location.href = 'index.html';
+    }
+
+    function redirectToBirthday() {
+        // Get the current date
+        var currentDate = new Date();
+
+        // Define the specific date onward when the button should be accessible
+        var specificDate = new Date('2024-07-28'); // Update with your specific date
+
+        // Check if the current date is after the specific date
+        if (currentDate >= specificDate) {
+            // Redirect to the birthday page
+            window.location.href = 'birthday.html';
+        } else {
+            // Display a message or take alternative action if the button is locked
+            alert('The Birthday will be accessible on ' + specificDate.toLocaleDateString());
+        }
+    }
+</script>
+
+</body>
+</html>

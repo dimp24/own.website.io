@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pic.css">
+  <title>Pictures</title>
+</head>
+<body>
+
+  <div class="message">
+    <p>Memories to be Cherished, click the pictures ♡ </p>
+  </div>
+
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="face front">
+        <img src="1pic.jpg" alt="Uploaded Picture" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="face back">
+        <p>My safest place, in this cruel world. I'll be here at your back, always supporting and rooting for you</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card2" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="face front">
+        <img src="2pic.jpeg" alt="Uploaded Picture" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="face back">
+        <p>First of many more cute photo booth pictures with you, my baby ♡</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card3" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="face front">
+        <img src="3pic.jpg" alt="Uploaded Picture" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="face back">
+        <p>I want more mirror pictures with you, my baby, more memories in your favorite place</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card4" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="face front">
+        <img src="4pic.jpg" alt="Uploaded Picture" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="face back">
+        <p>Hoping for more adventures with you and creating memories in places we are yet to discover together. Life is better with you.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function flipCard(card) {
+      card.classList.toggle('flipped');
+    }
+  </script>
+</body>
+</html>
